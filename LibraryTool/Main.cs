@@ -9,6 +9,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Media;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -48,6 +49,9 @@ namespace LibraryTool
     {
       InitializeComponent();
       InitializeBarcodeInputTimer();
+
+      var version = Assembly.GetExecutingAssembly().GetName().Version;
+      text_InfoVersion.Text = version.Major + "." + version.Minor + "." + version.Build;
 
       AlertSound = new SoundPlayer(Properties.Resources.alert_sound);
     }
