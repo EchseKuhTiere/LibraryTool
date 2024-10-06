@@ -1,5 +1,8 @@
 # LibraryTool
 A non-commercial library tool for a kindergarten
+No translation available, DE only
+
+![image](https://github.com/user-attachments/assets/ca799354-4d37-4e39-a818-8b870088acfb)
 
 # Features
 - Managing rental for books in kindergarten groups
